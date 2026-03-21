@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="社労士法第9次改正の使命を実践する社会保険労務士事務所。企業向け経営労務監査支援と個人向け社会保障支援の2軸で活動します。">
+<title>社会保険労務士事務所｜社労士法第9次改正の使命を実践する</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:      #1a3a5c;
+  --navy-dark: #0f2440;
+  --navy-mid:  #1f4570;
+  --sky:       #4a90b8;
+  --sky-light: #7ab3d0;
+  --sky-pale:  #e8f4f9;
+  --gold:      #c9a84c;
+  --white:     #ffffff;
+  --gray-bg:   #f4f7fa;
+  --gray-line: #dde4ea;
+  --text:      #2a2a2a;
+  --text-mid:  #4a5568;
+  --text-light:#6a7a8a;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.85;
+}
+
+/* ========== ヘッダー ========== */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 62px;
+  background: rgba(15,36,64,0.97);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(74,144,184,0.15);
+  z-index: 100;
+}
+.header-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  line-height: 1.3;
+  flex-shrink: 0;
+}
+.header-logo span {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: var(--sky-light);
+  letter-spacing: 0.1em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+.header-nav a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+.header-nav a:hover { color: var(--sky-light); }
+.header-nav-contact {
+  padding: 0.35rem 1rem;
+  border: 1px solid rgba(74,144,184,0.5);
+  border-radius: 2px;
+  color: var(--sky-light) !important;
+}
+.header-nav-contact:hover {
+  background: rgba(74,144,184,0.15);
+}
+
+/* ========== ボタン ========== */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+}
+.btn-sky  { background: var(--sky); color: var(--white); }
+.btn-sky:hover { background: var(--sky-light); }
+.btn-outline-w {
+  border: 1px solid rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.85);
+  background: transparent;
+}
+.btn-outline-w:hover { border-color: var(--sky-light); color: var(--sky-light); }
+.btn-navy { background: var(--navy); color: var(--white); }
+.btn-navy:hover { background: var(--navy-mid); }
+
+/* ========== セクション共通 ========== */
+.section { padding: 5rem 2rem; }
+.container { max-width: 920px; margin: 0 auto; }
+
+.section-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  color: var(--sky);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.section-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+.divider {
+  width: 36px;
+  height: 2px;
+  background: var(--sky);
+  margin-bottom: 2.5rem;
+}
+
+/* ========== ヒーロー ========== */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(160deg, var(--navy-dark) 0%, var(--navy) 60%, #1e4d7a 100%);
+  display: flex;
+  align-items: center;
+  padding: 100px 2rem 5rem;
+}
+.hero-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  width: 100%;
+}
+.hero-badge {
+  display: inline-block;
+  border: 1px solid rgba(201,168,76,0.4);
+  padding: 0.3rem 1rem;
+  color: var(--gold);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  margin-bottom: 1.75rem;
+}
+.hero h1 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  margin-bottom: 2rem;
+}
+.hero h1 .accent { color: var(--sky-light); }
+
+.mission-quote {
+  border-left: 3px solid rgba(74,144,184,0.4);
+  padding: 1.2rem 1.75rem;
+  margin-bottom: 2.5rem;
+  max-width: 680px;
+}
+.mission-quote-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+.mission-quote p {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 2;
+}
+
+.hero-desc {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 2;
+  max-width: 580px;
+  margin-bottom: 3rem;
+}
+
+.hero-axes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(74,144,184,0.2);
+  border: 1px solid rgba(74,144,184,0.2);
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+}
+.hero-axis {
+  background: rgba(255,255,255,0.04);
+  padding: 1.4rem 1.75rem;
+}
+.hero-axis-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--sky-light);
+  margin-bottom: 0.4rem;
+}
+.hero-axis-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.35rem;
+}
+.hero-axis-sub {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.7;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ========== 使命セクション ========== */
+.mission-section { background: var(--gray-bg); }
+
+.mission-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.mission-col {
+  background: var(--white);
+  border: 1px solid var(--gray-line);
+  padding: 2rem;
+}
+.mission-col.enterprise { border-top: 4px solid var(--navy); }
+.mission-col.individual { border-top: 4px solid var(--sky); }
+
+.mission-col-tag {
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  color: var(--text-light);
+  margin-bottom: 0.6rem;
+}
+.mission-col-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+.mission-col.individual .mission-col-title { color: #2a6a8a; }
+
+.mission-col-text {
+  font-size: 0.83rem;
+  color: var(--text-mid);
+  line-height: 2;
+  margin-bottom: 1.25rem;
+}
+.mission-items {
+  list-style: none;
+  font-size: 0.8rem;
+  color: var(--text-mid);
+}
+.mission-items li {
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--gray-line);
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.mission-items li::before {
+  content: '—';
+  color: var(--sky);
+  flex-shrink: 0;
+  font-size: 0.7rem;
+}
+
+.mission-goal {
+  background: var(--navy);
+  color: var(--white);
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+.mission-goal-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  color: var(--sky-light);
+  margin-bottom: 0.4rem;
+}
+.mission-goal-text {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1rem;
+  color: var(--white);
+}
+
+/* ========== 企業向け ========== */
+.enterprise-section { background: var(--white); }
+
+.enterprise-message {
+  background: #f0f4f8;
+  border-left: 4px solid var(--navy);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  line-height: 2;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.enterprise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--gray-line);
+  border: 1px solid var(--gray-line);
+  margin-bottom: 2rem;
+}
+.enterprise-item {
+  background: var(--white);
+  padding: 1.75rem;
+}
+.enterprise-item-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.6rem;
+}
+.enterprise-item-text {
+  font-size: 0.8rem;
+  color: var(--text-mid);
+  line-height: 1.9;
+}
+
+.enterprise-bg-note {
+  background: var(--sky-pale);
+  border: 1px solid var(--gray-line);
+  padding: 1.5rem 2rem;
+  font-size: 0.83rem;
+  color: var(--text-mid);
+  line-height: 2;
+}
+.enterprise-bg-note strong {
+  color: var(--navy);
+  font-family: 'Noto Serif JP', serif;
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+/* ========== 個人向け ========== */
+.individual-section { background: var(--gray-bg); }
+
+.individual-message {
+  background: var(--white);
+  border-left: 4px solid var(--sky);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  line-height: 2;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+.support-card {
+  background: var(--white);
+  border: 1px solid var(--gray-line);
+  border-top: 3px solid var(--sky);
+  padding: 1.75rem;
+}
+.support-card-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.6rem;
+}
+.support-card-text {
+  font-size: 0.8rem;
+  color: var(--text-mid);
+  line-height: 1.9;
+}
+.section-cta { text-align: center; }
+
+/* ========== 連合会連動 ========== */
+.rengokai-section { background: var(--navy-dark); }
+.rengokai-section .section-label { color: rgba(201,168,76,0.8); }
+.rengokai-section .section-title { color: var(--white); }
+.rengokai-section .divider { background: rgba(74,144,184,0.4); }
+
+.rengokai-text {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.68);
+  line-height: 2.2;
+  max-width: 680px;
+  margin-bottom: 2.5rem;
+}
+
+.rengokai-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(74,144,184,0.15);
+  border: 1px solid rgba(74,144,184,0.15);
+}
+.rengokai-item {
+  background: rgba(255,255,255,0.03);
+  padding: 1.75rem;
+}
+.rengokai-item-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--sky-light);
+  margin-bottom: 0.6rem;
+}
+.rengokai-item-text {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.9;
+}
+
+/* ========== 監修セクション ========== */
+.supervision-section { background: var(--sky-pale); }
+
+.supervision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.supervision-text {
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  line-height: 2.1;
+  margin-bottom: 1.25rem;
+}
+.supervision-note {
+  background: var(--white);
+  border: 1px solid var(--gray-line);
+  padding: 1rem 1.25rem;
+  font-size: 0.78rem;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+.supervision-note strong {
+  color: var(--navy);
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+}
+.supervision-side-label {
+  font-size: 0.72rem;
+  color: var(--text-light);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+.supervision-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--white);
+  border: 1px solid var(--gray-line);
+  text-decoration: none;
+  margin-bottom: 0.75rem;
+  transition: border-color 0.2s;
+}
+.supervision-link:hover { border-color: var(--sky); }
+.supervision-link-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--navy);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: var(--gold);
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.supervision-link-name {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--navy);
+  font-weight: 500;
+}
+.supervision-link-domain {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-light);
+}
+.supervision-caution {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-top: 1rem;
+}
+
+/* ========== プロフィール ========== */
+.profile-section { background: var(--white); }
+
+.profile-inner {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.8rem;
+  color: var(--sky-light);
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(15,36,64,0.2);
+  flex-shrink: 0;
+}
+.profile-name {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.25rem;
+}
+.profile-reg {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.profile-text {
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  line-height: 2.1;
+  margin-bottom: 1.25rem;
+}
+.profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  background: var(--gray-bg);
+  border: 1px solid var(--gray-line);
+  font-size: 0.72rem;
+  color: var(--text-light);
+}
+
+/* ========== お問い合わせ ========== */
+.contact-section {
+  background: var(--gray-bg);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.contact-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+.contact-text {
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  line-height: 2.1;
+  margin-bottom: 2rem;
+}
+
+/* ========== フッター ========== */
+.site-footer {
+  background: var(--navy-dark);
+}
+.footer-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  padding: 3.5rem 2rem 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 0;
+}
+.footer-brand-name {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.25rem;
+}
+.footer-brand-domain {
+  font-size: 0.62rem;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.1em;
+}
+.footer-col-title {
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 0.75rem;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-links a {
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+.footer-links a:hover { color: var(--sky-light); }
+
+.footer-bottom {
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+}
+.footer-group-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.footer-group-links a {
+  color: rgba(255,255,255,0.3);
+  text-decoration: none;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+.footer-group-links a:hover { color: var(--sky-light); }
+.footer-copy {
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 0.06em;
+}
+
+/* ========== レスポンシブ ========== */
+@media (max-width: 760px) {
+  .header-nav { display: none; }
+  .hero-axes    { grid-template-columns: 1fr; }
+  .mission-cols { grid-template-columns: 1fr; }
+  .enterprise-grid { grid-template-columns: 1fr; }
+  .support-grid { grid-template-columns: 1fr; }
+  .rengokai-grid { grid-template-columns: 1fr; }
+  .supervision-grid { grid-template-columns: 1fr; }
+  .profile-inner { grid-template-columns: 1fr; }
+  .avatar { margin: 0 auto; }
+  .footer-inner { flex-direction: column; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="header-logo">
+      社会保険労務士事務所
+      <span>career-life.support</span>
+    </a>
+    <div class="header-nav">
+      <a href="#mission">使命と活動</a>
+      <a href="#enterprise">企業向け</a>
+      <a href="#individual">個人向け</a>
+      <a href="#about">事務所概要</a>
+      <a href="/contact/" class="header-nav-contact">お問い合わせ</a>
+    </div>
+  </div>
+</header>
+
+<!-- ヒーロー -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-badge">社会保険労務士法 第9次改正（2025年6月成立）</span>
+    <h1>社労士の使命が、<br><span class="accent">法律に刻まれた。</span></h1>
+    <div class="mission-quote">
+      <p class="mission-quote-label">使命条文（法第1条・新設）より</p>
+      <p>「労働及び社会保険に関する法令の円滑な実施を通じて<br>
+      適切な労務管理の確立及び個人の尊厳が保持された<br>
+      適正な労働環境の形成に寄与することにより、<br>
+      社会保障の向上及び増進に資することを使命とする」</p>
+    </div>
+    <p class="hero-desc">
+      この使命を、日々の実践で証明する。<br>
+      企業には経営労務監査で。個人には社会保障の支援で。<br>
+      社労士の価値向上に、連合会と共に取り組みます。
+    </p>
+    <div class="hero-axes">
+      <div class="hero-axis">
+        <p class="hero-axis-label">企業向け</p>
+        <p class="hero-axis-title">経営労務監査支援</p>
+        <p class="hero-axis-sub">適切な労務管理の確立<br>人が育つ職場環境の実現</p>
+      </div>
+      <div class="hero-axis">
+        <p class="hero-axis-label">個人向け</p>
+        <p class="hero-axis-title">社会保障支援</p>
+        <p class="hero-axis-sub">社会保障の向上・増進<br>制度を必要な人に届ける</p>
+      </div>
+    </div>
+    <div class="hero-cta">
+      <a href="/contact/" class="btn btn-sky">お問い合わせ</a>
+      <a href="#mission" class="btn btn-outline-w">活動について</a>
+    </div>
+  </div>
+</section>
+
+<!-- 使命と2軸 -->
+<section class="section mission-section" id="mission">
+  <div class="container">
+    <p class="section-label">Mission</p>
+    <h2 class="section-title">社労士法第9次改正が示した、2つの使命</h2>
+    <div class="divider"></div>
+    <div class="mission-cols">
+      <div class="mission-col enterprise">
+        <p class="mission-col-tag">企業（事業）への使命</p>
+        <p class="mission-col-title">適切な労務管理の確立</p>
+        <p class="mission-col-text">経営労務監査により、企業の労務リスクを可視化し、
+        従業員が尊厳を持って働ける環境を整えます。
+        法令を守ることは最低ライン。
+        その先にある「人が育つ職場」をつくることが目的です。</p>
+        <ul class="mission-items">
+          <li>経営労務監査（第2条・今改正で明記）</li>
+          <li>就業規則・労働契約の適合確認</li>
+          <li>IPO・M&Aの労務デューデリジェンス</li>
+          <li>人的資本開示への対応支援</li>
+        </ul>
+      </div>
+      <div class="mission-col individual">
+        <p class="mission-col-tag">個人（労働者）への使命</p>
+        <p class="mission-col-title">社会保障の向上・増進</p>
+        <p class="mission-col-text">制度を知らないまま苦しんでいる人があまりにも多い。
+        必要な人に、必要な制度を届けることが
+        社労士の使命として法律に明記されました。</p>
+        <ul class="mission-items">
+          <li>障害年金の申請支援</li>
+          <li>雇用保険・傷病手当の活用支援</li>
+          <li>労働問題・職場環境の相談</li>
+          <li>専門家ネットワークへのつなぎ</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mission-goal">
+      <p class="mission-goal-label">共通のゴール（法第1条）</p>
+      <p class="mission-goal-text">豊かな国民生活及び活力ある経済社会の実現</p>
+    </div>
+  </div>
+</section>
+
+<!-- 企業向け -->
+<section class="section enterprise-section" id="enterprise">
+  <div class="container">
+    <p class="section-label">For Enterprise</p>
+    <h2 class="section-title">経営労務監査支援</h2>
+    <div class="divider"></div>
+    <div class="enterprise-message">
+      労務監査は、罰則を避けるためにあるのではありません。<br>
+      従業員が尊厳を持って働ける環境が整っているかを第三者の目で確認し、
+      経営の信頼性を高めるためにある——そう考えています。
+    </div>
+    <div class="enterprise-grid">
+      <div class="enterprise-item">
+        <p class="enterprise-item-title">定期労務監査</p>
+        <p class="enterprise-item-text">就業規則・労働契約・賃金台帳等の
+        法令適合状況を確認。未払い残業・ハラスメントリスクの
+        自主点検として。</p>
+      </div>
+      <div class="enterprise-item">
+        <p class="enterprise-item-title">IPO・M&amp;A労務DD</p>
+        <p class="enterprise-item-text">株式公開準備・M&A時の対象企業の
+        労務リスクを精査。37年の企業経験と
+        IPO従事の実績を直接活かします。</p>
+      </div>
+      <div class="enterprise-item">
+        <p class="enterprise-item-title">人的資本開示対応</p>
+        <p class="enterprise-item-text">同一労働同一賃金・人的資本開示に向けた
+        労務環境の可視化と改善プロセスの
+        設計を支援します。</p>
+      </div>
+    </div>
+    <div class="enterprise-bg-note">
+      <strong>担当者のバックグラウンド</strong>
+      37年間の会社員経験（IPO従事・ホールディングス初代内部監査人）と、
+      CISA（公認情報システム監査人）の資格を背景に持ちます。
+      「監査マインド」で労務リスクを可視化することが、他の社労士との違いです。
+    </div>
+  </div>
+</section>
+
+<!-- 個人向け -->
+<section class="section individual-section" id="individual">
+  <div class="container">
+    <p class="section-label">For Individuals</p>
+    <h2 class="section-title">社会保障支援</h2>
+    <div class="divider"></div>
+    <div class="individual-message">
+      社会保障は、あなたのためにある。<br>
+      制度を知らないまま苦しんでいる人が、あまりにも多い。<br>
+      法律が変わりました。届けることが、私たちの使命です。
+    </div>
+    <div class="support-grid">
+      <div class="support-card">
+        <p class="support-card-title">障害年金</p>
+        <p class="support-card-text">精神障害・身体障害・難病など幅広い障害が対象。
+        受給できる可能性があるにもかかわらず申請していない方が多くいます。
+        まず一緒に可能性を確認しましょう。</p>
+      </div>
+      <div class="support-card">
+        <p class="support-card-title">雇用保険・傷病手当</p>
+        <p class="support-card-text">病気・ケガで働けなくなったとき、退職・休職のとき——
+        活用できる制度が複数あります。
+        状況に応じた選択肢をご案内します。</p>
+      </div>
+      <div class="support-card">
+        <p class="support-card-title">労働相談</p>
+        <p class="support-card-text">不当解雇・ハラスメント・未払い賃金など
+        働くことに関するご相談をお受けします。
+        必要に応じて専門家（弁護士等）につなぎます。</p>
+      </div>
+      <div class="support-card">
+        <p class="support-card-title">専門家ネットワーク</p>
+        <p class="support-card-text">相続・介護・住まい・法律——6分野の専門家をご紹介します。
+        複数の問題を一人で抱え込まずに、
+        最適な専門家につなぎます。</p>
+      </div>
+    </div>
+    <div class="section-cta">
+      <a href="/contact/" class="btn btn-navy">まずはご相談ください</a>
+    </div>
+  </div>
+</section>
+
+<!-- 連合会連動 -->
+<section class="section rengokai-section">
+  <div class="container">
+    <p class="section-label">With 全国社会保険労務士会連合会</p>
+    <h2 class="section-title">社労士の使命実践と価値向上へ</h2>
+    <div class="divider"></div>
+    <p class="rengokai-text">社労士法第9次改正は、社労士という職業の意義を法律で再定義しました。
+    連合会の動きと連動しながら、使命条文の実践を通じて、
+    社会保険労務士という仕事の価値を社会に示していきます。</p>
+    <div class="rengokai-grid">
+      <div class="rengokai-item">
+        <p class="rengokai-item-title">使命条文の実践</p>
+        <p class="rengokai-item-text">法律に刻まれた使命を、日々の業務で体現する。
+        企業と個人、両方への実践が社労士の価値を証明します。</p>
+      </div>
+      <div class="rengokai-item">
+        <p class="rengokai-item-title">経営労務監査の普及</p>
+        <p class="rengokai-item-text">第2条に明記された監査業務を実践し、
+        その意義と手法を発信・共有していきます。</p>
+      </div>
+      <div class="rengokai-item">
+        <p class="rengokai-item-title">社会保障の届け方の研究</p>
+        <p class="rengokai-item-text">知らない人に、どう届けるか。
+        Substack・書籍・ウェブを通じた情報発信の実践例を積み上げます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 研究所との関係 -->
+<section class="section supervision-section">
+  <div class="container">
+    <p class="section-label">Research Supervision</p>
+    <h2 class="section-title">キャリア＆ライフデザイン研究所<br>関連コンテンツの監修</h2>
+    <div class="divider"></div>
+    <div class="supervision-grid">
+      <div>
+        <p class="supervision-text">当事務所は、キャリア＆ライフデザイン研究所（career-life.design）が
+        発信するコンテンツのうち、社労士・社会保障分野に関するものを監修しています。<br><br>
+        研究所と当事務所は別組織です。研究所は時代進が主宰するコンテンツの場であり、
+        当事務所はその内容の専門的正確性を担保する立場として連携しています。</p>
+        <div class="supervision-note">
+          <strong>監修の範囲</strong>
+          Substack「協進化ジャーナル」の社会保障・労務関連記事、
+          Kindle書籍の専門領域に関する記述、
+          career-life.designが提供する社労士関連情報
+        </div>
+      </div>
+      <div>
+        <p class="supervision-side-label">連携先</p>
+        <a href="https://career-life.design" class="supervision-link" target="_blank">
+          <div class="supervision-link-icon">時</div>
+          <div>
+            <span class="supervision-link-name">協進化ジャーナル</span>
+            <span class="supervision-link-domain">career-life.design</span>
+          </div>
+        </a>
+        <p class="supervision-caution">※ 研究所のコンテンツに関するご意見・ご指摘は、
+        当事務所ではなく研究所へ直接お寄せください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 事務所について -->
+<section class="section profile-section" id="about">
+  <div class="container">
+    <p class="section-label">About</p>
+    <h2 class="section-title">事務所について</h2>
+    <div class="divider"></div>
+    <div class="profile-inner">
+      <div class="avatar">社</div>
+      <div>
+        <h3 class="profile-name">（代表者名）</h3>
+        <p class="profile-reg">
+          合同会社キャリア＆ライフデザイン研究所 代表社員<br>
+          社会保険労務士登録番号：（登録番号）
+        </p>
+        <p class="profile-text">37年間の会社員経験（事業会社のIPO従事・ホールディングスの初代内部監査人）を経て独立。<br><br>
+        社労士法第9次改正で使命条文が新設されたことを受け、経営労務監査と社会保障支援の2軸で使命を実践します。
+        CISAで培った監査マインドを労務監査に活かしながら、連合会と連動して社労士の価値向上にも取り組んでいきます。</p>
+        <div class="profile-tags">
+          <span class="tag">社会保険労務士</span>
+          <span class="tag">宅地建物取引士</span>
+          <span class="tag">CISA（公認情報システム監査人）</span>
+          <span class="tag">37年の企業経験</span>
+          <span class="tag">IPO従事</span>
+          <span class="tag">ホールディングス内部監査</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- お問い合わせ -->
+<section class="contact-section" id="contact">
+  <h2 class="contact-title">お問い合わせ</h2>
+  <p class="contact-text">
+    企業向けの経営労務監査、個人向けの社会保障相談、<br>
+    研究所コンテンツの監修依頼など、<br>
+    まずはお気軽にご連絡ください。
+  </p>
+  <a href="/contact/" class="btn btn-navy">お問い合わせフォームへ</a>
+</section>
+
+<!-- フッター -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand-name">社会保険労務士事務所</p>
+      <p class="footer-brand-domain">career-life.support</p>
+    </div>
+    <div>
+      <p class="footer-col-title">サービス</p>
+      <div class="footer-links">
+        <a href="#mission">使命と活動</a>
+        <a href="#enterprise">企業向け（経営労務監査）</a>
+        <a href="#individual">個人向け（社会保障支援）</a>
+      </div>
+    </div>
+    <div>
+      <p class="footer-col-title">サイト情報</p>
+      <div class="footer-links">
+        <a href="/about/">事務所について</a>
+        <a href="/contact/">お問い合わせ</a>
+        <a href="/privacy/">プライバシーポリシー</a>
+        <a href="/tokushoho/">特定商取引法に基づく表記</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-group-links">
+      <a href="https://career-life.design" target="_blank">career-life.design</a>
+      <a href="https://career-life.tech" target="_blank">career-life.tech</a>
+      <a href="https://career-life.group" target="_blank">career-life.group</a>
+    </div>
+    <p class="footer-copy">© 2026 合同会社 キャリア＆ライフデザイン研究所</p>
+  </div>
+</footer>
+
+</body>
+</html>

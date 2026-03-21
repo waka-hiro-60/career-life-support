@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="合同会社キャリア＆ライフデザイン研究所の事務所詳細。代表メッセージ・経歴・資格をご紹介します。">
+<title>事務所について｜社会保険労務士事務所</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:      #1a3a5c;
+  --navy-dark: #0f2440;
+  --navy-mid:  #1f4570;
+  --sky:       #4a90b8;
+  --sky-light: #7ab3d0;
+  --sky-pale:  #e8f4f9;
+  --gold:      #c9a84c;
+  --white:     #ffffff;
+  --gray-bg:   #f4f7fa;
+  --gray-line: #dde4ea;
+  --text:      #2a2a2a;
+  --text-mid:  #4a5568;
+  --text-light:#6a7a8a;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.85;
+}
+
+/* ── ヘッダー ── */
+.site-header {
+  position: fixed; top: 0; left: 0; right: 0;
+  height: 62px;
+  background: rgba(15,36,64,0.97);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(74,144,184,0.15);
+  z-index: 100;
+}
+.header-inner {
+  max-width: 1040px; margin: 0 auto; height: 100%;
+  padding: 0 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.header-logo {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 0.9rem; font-weight: 700;
+  color: var(--white); text-decoration: none; line-height: 1.3; flex-shrink: 0;
+}
+.header-logo span {
+  display: block; font-size: 0.6rem; font-weight: 400;
+  color: var(--sky-light); letter-spacing: 0.1em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.header-nav { display: flex; align-items: center; gap: 1.75rem; }
+.header-nav a {
+  color: rgba(255,255,255,0.7); text-decoration: none;
+  font-size: 0.8rem; letter-spacing: 0.04em; white-space: nowrap; transition: color 0.2s;
+}
+.header-nav a:hover { color: var(--sky-light); }
+.header-nav-contact {
+  padding: 0.35rem 1rem;
+  border: 1px solid rgba(74,144,184,0.5); border-radius: 2px;
+  color: var(--sky-light) !important;
+}
+.header-nav-contact:hover { background: rgba(74,144,184,0.15); }
+
+/* ── ページヘッダー ── */
+.page-hero {
+  background: linear-gradient(160deg, var(--navy-dark) 0%, var(--navy) 100%);
+  padding: 8rem 2rem 4rem;
+}
+.page-hero-label {
+  font-size: 0.68rem; letter-spacing: 0.2em; color: var(--sky);
+  text-transform: uppercase; margin-bottom: 0.5rem;
+}
+.page-hero h1 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700;
+  color: var(--white); letter-spacing: 0.03em; line-height: 1.4;
+}
+
+/* ── セクション共通 ── */
+.section { padding: 5rem 2rem; }
+.container { max-width: 860px; margin: 0 auto; }
+.section-label {
+  font-size: 0.68rem; letter-spacing: 0.2em; color: var(--sky);
+  text-transform: uppercase; margin-bottom: 0.5rem;
+}
+.section-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: 700;
+  color: var(--navy); line-height: 1.5; margin-bottom: 0.75rem;
+}
+.divider { width: 36px; height: 2px; background: var(--sky); margin-bottom: 2.5rem; }
+
+/* ── 基本情報 ── */
+.info-section { background: var(--white); }
+.info-table { width: 100%; border-collapse: collapse; }
+.info-table tr { border-bottom: 1px solid var(--gray-line); }
+.info-table th {
+  width: 200px; padding: 1rem 1.25rem; text-align: left;
+  font-size: 0.82rem; font-weight: 500; color: var(--text-light);
+  background: var(--gray-bg); white-space: nowrap;
+}
+.info-table td {
+  padding: 1rem 1.25rem; font-size: 0.88rem; color: var(--text-mid); line-height: 1.8;
+}
+
+/* ── 代表メッセージ ── */
+.message-section { background: var(--gray-bg); }
+.message-box {
+  background: var(--white);
+  border-left: 4px solid var(--sky);
+  padding: 2rem 2.5rem;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 2.2;
+}
+
+/* ── 経歴・資格 ── */
+.career-section { background: var(--white); }
+.timeline-list {
+  list-style: none;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 2.5rem;
+}
+.timeline-list::before {
+  content: '';
+  position: absolute; left: 0.35rem; top: 0.4rem; bottom: 0.4rem;
+  width: 2px; background: var(--gray-line);
+}
+.timeline-list li {
+  position: relative;
+  padding: 0 0 1.5rem 1rem;
+  font-size: 0.88rem; color: var(--text-mid); line-height: 1.8;
+}
+.timeline-list li::before {
+  content: '';
+  position: absolute; left: -1.7rem; top: 0.5rem;
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--sky); border: 2px solid var(--white);
+  box-shadow: 0 0 0 2px var(--sky);
+}
+.timeline-year {
+  font-family: 'Noto Serif JP', serif; font-weight: 700;
+  color: var(--navy); margin-right: 0.75rem;
+}
+.badge-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.badge {
+  display: inline-block; padding: 0.3rem 0.9rem;
+  background: var(--navy); color: var(--sky-light);
+  font-size: 0.75rem; letter-spacing: 0.05em; border-radius: 1px;
+}
+
+/* ── フッター ── */
+.site-footer { background: var(--navy-dark); }
+.footer-inner {
+  max-width: 920px; margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: flex-start;
+  flex-wrap: wrap; gap: 2.5rem;
+  padding: 3.5rem 2rem 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.footer-brand-name {
+  font-family: 'Noto Serif JP', serif; font-size: 0.95rem; font-weight: 700;
+  color: var(--white); margin-bottom: 0.25rem;
+}
+.footer-brand-domain { font-size: 0.62rem; color: rgba(255,255,255,0.3); letter-spacing: 0.1em; }
+.footer-col-title {
+  font-size: 0.65rem; letter-spacing: 0.14em; color: rgba(255,255,255,0.35);
+  margin-bottom: 0.75rem; font-family: 'Noto Sans JP', sans-serif;
+}
+.footer-links { display: flex; flex-direction: column; gap: 0.5rem; }
+.footer-links a {
+  color: rgba(255,255,255,0.55); text-decoration: none;
+  font-size: 0.78rem; letter-spacing: 0.03em; transition: color 0.2s; white-space: nowrap;
+}
+.footer-links a:hover { color: var(--sky-light); }
+.footer-bottom {
+  max-width: 920px; margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 1rem; padding: 1.5rem 2rem;
+}
+.footer-group-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.footer-group-links a {
+  color: rgba(255,255,255,0.3); text-decoration: none;
+  font-size: 0.7rem; letter-spacing: 0.05em; transition: color 0.2s;
+}
+.footer-group-links a:hover { color: var(--sky-light); }
+.footer-copy { font-size: 0.68rem; color: rgba(255,255,255,0.2); letter-spacing: 0.06em; }
+
+/* ── レスポンシブ ── */
+@media (max-width: 760px) {
+  .header-nav { display: none; }
+  .info-table th { width: 120px; }
+  .footer-inner { flex-direction: column; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="header-logo">
+      社会保険労務士事務所
+      <span>career-life.support</span>
+    </a>
+    <div class="header-nav">
+      <a href="/#mission">使命と活動</a>
+      <a href="/#enterprise">企業向け</a>
+      <a href="/#individual">個人向け</a>
+      <a href="/about/">事務所概要</a>
+      <a href="/contact/" class="header-nav-contact">お問い合わせ</a>
+    </div>
+  </div>
+</header>
+
+<!-- ページヘッダー -->
+<div class="page-hero">
+  <p class="page-hero-label">About</p>
+  <h1>事務所について</h1>
+</div>
+
+<!-- 基本情報 -->
+<section class="section info-section">
+  <div class="container">
+    <p class="section-label">Office Info</p>
+    <h2 class="section-title">基本情報</h2>
+    <div class="divider"></div>
+    <table class="info-table">
+      <tr>
+        <th>事務所名</th>
+        <td>合同会社キャリア＆ライフデザイン研究所</td>
+      </tr>
+      <tr>
+        <th>代表者名</th>
+        <td>（代表者名）</td>
+      </tr>
+      <tr>
+        <th>所在地</th>
+        <td>（所在地）</td>
+      </tr>
+      <tr>
+        <th>社会保険労務士<br>登録番号</th>
+        <td>（登録番号）</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<!-- 代表メッセージ -->
+<section class="section message-section">
+  <div class="container">
+    <p class="section-label">Message</p>
+    <h2 class="section-title">代表メッセージ</h2>
+    <div class="divider"></div>
+    <div class="message-box">
+      <p>2025年6月、社会保険労務士法が改正され、
+      社労士の使命が初めて法律に明記されました。</p>
+      <br>
+      <p>「個人の尊厳が保持された適正な労働環境の形成」<br>
+      「社会保障の向上及び増進」——</p>
+      <br>
+      <p>これは、社労士が人の尊厳と権利を守る専門家であることを、
+      国が認めたということです。</p>
+      <br>
+      <p>私はこの使命を、日々の実践で証明したい。<br>
+      報酬はその結果として受け取る。それが私の社労士としての姿勢です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 経歴・資格 -->
+<section class="section career-section">
+  <div class="container">
+    <p class="section-label">Career &amp; Qualifications</p>
+    <h2 class="section-title">経歴・資格</h2>
+    <div class="divider"></div>
+    <ul class="timeline-list">
+      <li><span class="timeline-year">〜2024年</span>37年間の会社員経験（IPO従事・ホールディングス初代内部監査人）</li>
+      <li><span class="timeline-year">2024年</span>社会保険労務士として登録</li>
+      <li><span class="timeline-year">2026年</span>合同会社キャリア＆ライフデザイン研究所 設立・独立</li>
+    </ul>
+    <p style="font-size:0.82rem; color:var(--text-light); margin-bottom:1.25rem; letter-spacing:0.04em;">保有資格</p>
+    <div class="badge-row">
+      <span class="badge">社会保険労務士</span>
+      <span class="badge">宅地建物取引士</span>
+      <span class="badge">CISA（公認情報システム監査人）</span>
+    </div>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand-name">社会保険労務士事務所</p>
+      <p class="footer-brand-domain">career-life.support</p>
+    </div>
+    <div>
+      <p class="footer-col-title">サービス</p>
+      <div class="footer-links">
+        <a href="/#mission">使命と活動</a>
+        <a href="/#enterprise">企業向け（経営労務監査）</a>
+        <a href="/#individual">個人向け（社会保障支援）</a>
+      </div>
+    </div>
+    <div>
+      <p class="footer-col-title">サイト情報</p>
+      <div class="footer-links">
+        <a href="/about/">事務所について</a>
+        <a href="/contact/">お問い合わせ</a>
+        <a href="/privacy/">プライバシーポリシー</a>
+        <a href="/tokushoho/">特定商取引法に基づく表記</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-group-links">
+      <a href="https://career-life.design" target="_blank">career-life.design</a>
+      <a href="https://career-life.tech" target="_blank">career-life.tech</a>
+      <a href="https://career-life.group" target="_blank">career-life.group</a>
+    </div>
+    <p class="footer-copy">© 2026 合同会社 キャリア＆ライフデザイン研究所</p>
+  </div>
+</footer>
+
+</body>
+</html>
